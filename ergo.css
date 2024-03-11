@@ -1,0 +1,1102 @@
+:root {
+    --color-primary: #8e0038;
+    --color-primary-highlight: #ad0044;
+    --color-primary-faded: #8e013836;
+    --color-grey: #e2e3e5;
+    --color-grey-highlight: #e9ebeb;
+    --color-grey-faded: #e9ebeb6b;
+    --color-secondary: #f3c591;
+    --color-secondary-faded: #ffeede;
+    --color-tertiary: #0f94a7;
+    --color-tertiary-faded: #0f94a730;
+    --color-danger: #944f6a;
+    --color-success: #a3df8b;
+    --color-success-faded: #a3df8b54;
+    --color-warning: #f3c591;
+    --color-warning-faded: #ffeede;
+    --color-border: #d6d8db;
+
+    --font-color: #4f5b65;
+
+    --border-radius: 0.25rem;
+
+    --border-shadow: 0 0 0px #999;
+}
+
+/* ############## Bootstrap 4.3 resets ############## */
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.outer-container {
+    min-height: 400px;
+}
+
+.vibot-twbs .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.vibot-twbs .small,
+small {
+    font-size: 80%;
+    font-weight: 400;
+
+}
+
+.vibot-twbs .form-text {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.vibot-twbs .input-group .form-control,
+.vibot-twbs .input-group .form-select {
+    border-radius: var(--border-radius);
+}
+
+.vibot-twbs .input-group .input-group-prepend .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--color-grey-faded);
+    border-color: #e2e6ea;
+    border-right: 0 solid transparent;
+    z-index: 1;
+}
+
+.vibot-twbs .input-group:has(.input-group-prepend) .form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.vibot-twbs .input-group>.form-control:not(:last-child),
+.vibot-twbs .input-group>.form-select:not(:last-child) {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.form-control {
+    height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.vibot-twbs label {
+    font-size: 1rem;
+    font-weight: 400 !important;
+    line-height: 1.5;
+    margin-bottom: 0.5rem !important;
+    margin-left: 2px;
+}
+
+form.vibot-twbs .form-group {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.vibot-twbs h1,
+.vibot-twbs h2,
+.vibot-twbs h3,
+.vibot-twbs h4,
+.vibot-twbs h5,
+.vibot-twbs h6 {
+    padding: 0;
+    font-weight: 400;
+}
+
+.vibot-twbs h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    line-height: 1.15;
+    font-weight: 500;
+}
+
+.vibot-twbs h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.15;
+}
+
+/* Hack to transform btn -> btn-lg (BS default for form)  */
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+/* Select dropdown icon */
+
+/*
+.icon-dd {
+  display: none;
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group select {
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
+}
+*/
+
+/* Hack to transform row -> form-row (BS default for form)  */
+
+.vibot-twbs .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+/*.vibot-twbs .row>.col,
+.vibot-twbs .row>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}*/
+
+/* ############## Custom CSS ############## */
+
+body {
+    color: #000;
+    font-family: 'Helvetica Neue', Arial, Verdana, sans-serif;
+}
+
+.vibot-twbs-body, form.vibot-twbs {
+    font-family: 'Helvetica Neue', Arial, Verdana, sans-serif;
+}
+
+.vibot-twbs .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vibot-twbs a {
+    color: var(--color-primary);
+}
+
+.vibot-twbs a:hover {
+    color: var(--color-primary-highlight);
+    text-decoration: underline;
+}
+
+.vibot-twbs-body {
+    padding-top: 42px;
+}
+
+.vibot-twbs-body .navbar {
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+    position: initial !important;
+}
+
+.vibot-twbs-body .navbar img {
+    margin-left: -10px;
+    width: 204px !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    .vibot-twbs-body .navbar img {
+        margin-left: 5px;
+    }
+}
+
+.navbar,
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    box-shadow: none !important;
+    /* background-color: #fff !important; */
+}
+
+.navbar.navbar-header .container {
+    align-items: end;
+}
+
+.navbar.navbar-header .container:after {
+    content: 'Eintrittskartenversicherung - Schadenmeldung';
+    color: #4f5b65;
+    margin-bottom: 8px;
+    margin-right: 25px;
+    display: none;
+}
+
+/*.sub-headline h2 {
+  margin-bottom: 1.75rem;
+}*/
+
+.main-headline {
+    margin-top: 1rem !important;
+}
+
+.main-headline-steps {
+    text-align: right;
+    color: #b7b7b7;
+}
+
+.vibot-twbs ol,
+.vibot-twbs ul,
+.vibot-twbs dl {
+    margin-bottom: 0;
+}
+
+.vibot-twbs-body,
+form.vibot-twbs {
+    background: none;
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group span.icon-dd:before {
+    color: var(--color-primary);
+    margin-top: 2px;
+}
+
+span.navbar-brand {
+    display: none !important;
+}
+
+.vibot-twbs .vb-submit {
+    margin-top: 24px;
+}
+
+.vibot-twbs .btn-danger {
+    background-color: var(--color-danger);
+}
+
+.vibot-twbs .input-group select.form-control:has(option[value=""]:checked) {
+  color: #9ba7af !important;
+  font-style: italic;
+}
+
+.vibot-twbs *::placeholder {
+  color: #9ba7af !important;
+  font-style: italic;
+}
+
+/* Button Group */
+
+@media only screen and (max-width: 767px) {
+
+    .vibot-twbs .btn-group,
+    .vibot-twbs .btn-group-vertical {
+        flex-wrap: wrap !important;
+    }
+
+    .vibot-twbs .btn-group>.btn,
+    .vibot-twbs .btn-group-vertical>.btn {
+        margin-bottom: 0px !important;
+        width: 100%;
+    }
+
+    .vibot-twbs .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+    .vibot-twbs .btn-group>.btn-group:not(:last-child)>.btn {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--border-radius);
+    }
+
+    .vibot-twbs .btn-group>.btn:not(:first-child),
+    .vibot-twbs .btn-group>.btn-group:not(:first-child)>.btn {
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: var(--border-radius);
+    }
+}
+
+/* Progress */
+
+.vibot-twbs .progress-bar {
+    background-color: var(--color-tertiary-faded);
+}
+
+.vibot-twbs .progress {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Toast */
+#toast-container div.toast {
+    box-shadow: 1px 1px 6px 0px #48484836 !important;
+    font-size: initial;
+    opacity: 1;
+}
+
+.toast.toast-success {
+    box-shadow: 0 0 1px #999 !important;
+    background-color: var(--color-success);
+}
+
+.toast.toast-info {
+    box-shadow: 0 0 1px #999 !important;
+    background-color: var(--color-tertiary);
+}
+
+.toast.toast-error {
+    box-shadow: 0 0 1px #999 !important;
+}
+
+.toast-top-full-width {
+    top: 12px;
+    /*right: 12px;*/
+    margin-right: 12px;
+    margin-left: 12px;
+    width: initial;
+}
+
+#toast-container.toast-bottom-full-width>div,
+#toast-container.toast-top-full-width>div {
+    width: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Loader */
+
+#vibot-loader.overlay {
+    z-index: 10;
+    /* padding-top: 0 !important; */
+}
+
+#vibot-loader .spinner {
+    border-bottom-color: var(--color-primary) !important;
+}
+
+/* Prev & Next Buttons */
+
+.vibot-twbs .vb-btn-next.btn.btn-primary,
+.vibot-twbs .vb-btn-back.btn.btn-default {
+    background: var(--color-primary);
+    font-size: 1em;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    transition: all ease-in-out 0.25s;
+    border: 2px solid transparent;
+}
+
+.vibot-twbs .vb-btn-back.btn.btn-default {
+    background-color: var(--color-grey);
+}
+
+.vibot-twbs .vb-btn-next.btn.btn-primary:hover {
+    background: var(--color-primary-highlight);
+    color: #fff;
+    border: 2px solid var(--color-primary-highlight);
+}
+
+.vibot-twbs .vb-btn-back.btn.btn-default:hover {
+    background: var(--color-grey-highlight);
+    border: 2px solid var(--color-grey-highlight);
+}
+
+.vibot-twbs .vb-btn-next.btn.btn-primary:after {
+    color: #fff;
+}
+
+.vibot-twbs .btn.btn-default:focus,
+.vibot-twbs .btn.btn-default.focus {
+    background: var(--color-grey-highlight);
+    border-color: var(--color-grey-highlight);
+    box-shadow: 0 0 0 0.2rem var(--color-grey-faded);
+}
+
+.vibot-twbs .btn-primary:focus,
+.vibot-twbs .btn-primary.focus {
+    background: var(--color-primary-highlight);
+    border-color: var(--color-primary-highlight);
+    box-shadow: 0 0 0 0.2rem var(--color-primary-faded);
+}
+
+/* HTML */
+
+.vibot-twbs .vb-html {
+    margin-top: 0;
+}
+
+.vibot-twbs .vb-html.as-label {
+    margin-top: 3px !important;
+    letter-spacing: 1px;
+}
+
+.vibot-twbs .vb-html.as-small {
+    font-size: 80%;
+}
+
+.vibot-twbs .vb-html.as-field>div {
+    margin-top: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #f6f7f7;
+    border: 1px solid #e2e6ea;
+    padding-left: 10px;
+    border-radius: var(--border-radius);
+    height: 100%;
+    /* margin-right: 5px; */
+    /* margin-left: 5px; */
+}
+
+/* Multi Select */
+
+.vibot-twbs .vb-multiselect .form-group .input-group .form-check-inline .form-check-input:checked {
+    background-color: var(--color-primary-highlight);
+    border-color: var(--color-primary-highlight);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem var(--color-primary-faded);
+}
+
+.vibot-twbs .vb-multiselect .form-group .input-group .form-check-inline .form-check-input:hover {
+    background-color: var(--color-primary-faded);
+    border-color: var(--color-primary-faded);
+}
+
+.vibot-twbs .vb-multiselect.vb-multiselect--hide-label .form-check-label {
+    display: none;
+}
+
+.vibot-twbs .vb-multiselect.vb-multiselect--no-margin .form-check {
+    margin: 0 !important;
+}
+
+.vibot-twbs .vb-multiselect.vb-multiselect--no-margin .form-check-label {
+    margin-bottom: 0 !important;
+}
+
+.vibot-twbs .vb-multiselect.vb-multiselect--no-margin .form-group .input-group {
+    min-height: 0;
+}
+
+.vibot-twbs .vb-multiselect .form-check-inline .form-check-input {
+    margin-right: 0;
+}
+
+/* Single Select */
+
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: none;
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary {
+    background-color: var(--color-grey);
+    border-color: var(--color-border);
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary:hover {
+    background-color: #f7f7f7;
+    color: var(--color-primary);
+    border-color: var(--color-border);
+    box-shadow: var(--color-primary-faded);
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .form-check-inline .form-check-input:hover {
+    background-color: var(--color-primary-faded);
+    border-color: var(--color-primary-faded);
+}
+
+.vibot-twbs .form-check-input:focus {
+    border-color: var(--color-primary-faded);
+    box-shadow: 0 0 0 0.2rem var(--color-primary-faded);
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .form-check-inline .form-check-input:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem var(--color-primary-faded);
+}
+
+.vibot-twbs .vb-date.vb-error span.icon-dd,
+.vibot-twbs .vb-singleselect.vb-error span.icon-dd {
+    display: none;
+}
+
+.form-check-input,
+.form-check-label {
+    cursor: pointer;
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .form-check-inline .form-check-input {
+    transition: none;
+}
+
+.radio-bubbles .input-group {
+    flex-direction: column;
+}
+
+.radio-bubbles .input-group .form-check {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-grey-faded);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    border: 0px solid var(--color-border);
+}
+
+.radio-bubbles .form-check .form-check-input {
+    flex-basis: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    /* float: left; */
+    margin-left: 2px;
+}
+
+.radio-bubbles .input-group .form-check-inline .form-check-label {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    margin-left: 10px !important;
+    font-weight: bold !important;
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__c4ca4238a0b923820dcc509a6f75849b"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Erkrankung, die zum Zeitpunkt der Buchung noch nicht bekannt war (z. B. auch PCR- oder ärztlich bestätigte Covid-19-Infektion)';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__c81e728d9d4c2f636f067f89cc14862c"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Eine Unfallverletzung wie zum Beispiel ein verstauchter Knöchel oder gebrochener Unterarm';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__eccbc87e4b5ce2fe28308fd9f2a7baf3"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Schwangerschaft oder damit einhergehende Umstände';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__a87ff679a2f3e71d9181a67b7542122c"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Zum Beispiel ein Schaden verursacht durch Feuer oder einem Wasserrohrbruch';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__e4da3b7fbbce2345d7772b0674a318d5"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Mehr als zwei Stunden Verspätung, wodurch mehr als die Hälfte der Veranstaltung versäumt wurde';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__1679091c5a880faf6fb5e6087eb1b2dc"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Die Distanz vom neuen Wohnort zum Veranstaltungsort beträgt mehr als 100 km';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__8f14e45fceea167a5a36dedd4bea2543"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Todesfall eines Teilnehmers, Angehörigen oder einer Betreuungsperson';
+}
+
+.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__c9f0f895fb98ab9159f51fd0297e236d"]:after {
+    display: block;
+    letter-spacing: initial;
+    font-size: 80%;
+    font-weight: 400;
+    content: 'Ein Termin zur Spende oder zum Empfang von Organen und Geweben im Rahmen des Transplantationsgesetzes';
+}
+
+/* Autocomplete */
+
+.vibot-twbs .vb-autocomplete .bootstrap-tagsinput .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:hover,
+.vibot-twbs .vb-autocomplete .bootstrap-tagsinput .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:focus {
+    background-color: var(--color-primary);
+}
+
+.vibot-twbs .vb-autocomplete .bootstrap-tagsinput .twitter-typeahead input.tt-input {
+    color: #9ba7af;
+}
+
+/* Tabular */
+
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-add {
+    background: var(--color-primary);
+    float: right;
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-remove {
+    float: right;
+}
+
+.vibot-twbs .vb-duplicate.tabular .row {
+    margin-bottom: 1rem;
+}
+
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-add:hover,
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-remove:hover,
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-add:focus,
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-remove:focus,
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-add:active,
+.vibot-twbs .vb-duplicate .vb-bs-btn-clone-remove:active {
+    background: var(--color-primary-highlight);
+    color: #fff;
+    padding: 8px 32px 8px 32px;
+}
+
+.vibot-twbs .vb-duplicate.vb-duplicate--disabled .vb-bs-btn-clone-add,
+.vibot-twbs .vb-duplicate.vb-duplicate--disabled .vb-bs-btn-clone-remove {
+    display: none;
+}
+
+/* Date Picker */
+
+.vibot-twbs .vb-date.datepicker--popup .picker.picker--opened {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+}
+
+.vibot-twbs .vb-date.datepicker--popup .picker.picker--opened .picker__holder {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .vibot-twbs .vb-date.datepicker--popup .picker.picker--opened .picker__holder {
+        width: 90%;
+    }
+}
+
+.vibot-twbs .picker__input.picker__input--active {
+    border-color: var(--color-primary);
+}
+
+.vibot-twbs .form-control:focus {
+    border: 1px solid var(--color-primary);
+    box-shadow: none;
+}
+
+.vibot-twbs .vb-date .vb-date-dd span.icon-dd {
+    color: var(--color-primary);
+}
+
+.vibot-twbs .vb-date .vb-date-dd span.icon-dd:before {
+    margin-top: 2px;
+}
+
+.vibot-twbs .vb-date .picker--opened .picker__day--highlighted {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.vibot-twbs .vb-date .picker--opened .picker__day--today:before {
+    border-top: 0.5em solid var(--color-primary);
+}
+
+.vibot-twbs .vb-date .picker--opened .picker__nav--next:before {
+    border-left: 0.75em solid var(--color-primary);
+}
+
+.vibot-twbs .vb-date .picker--opened .picker__nav--prev:before {
+    border-right: 0.75em solid var(--color-primary);
+}
+
+.vibot-twbs .vb-date .picker__button--today {
+    color: #000;
+    border: 2px solid transparent;
+    transition: all ease-in-out 0.25s;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    font-size: .75em;
+    font-weight: 400 !important;
+    border-radius: var(--border-radius);
+    width: auto;
+    background-color: var(--color-grey);
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.vibot-twbs .picker__button--today:before {
+    border-top: 0.66em solid var(--color-primary);
+}
+
+.vibot-twbs .vb-date .picker__button--today:hover {
+    color: #4f5b65;
+    background-color: transparent;
+    border: 2px solid #e2e6ea;
+}
+
+.vibot-twbs .vb-date .picker__button--clear {
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all ease-in-out 0.25s;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    font-size: .75em;
+    font-weight: 400 !important;
+    border-radius: var(--border-radius);
+    width: auto;
+    background-color: var(--color-danger);
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.vibot-twbs .vb-date .picker__button--close {
+    color: #000;
+    border: 2px solid transparent;
+    transition: all ease-in-out 0.25s;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    font-size: .75em;
+    font-weight: 400 !important;
+    border-radius: var(--border-radius);
+    width: auto;
+    background-color: var(--color-grey);
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.vibot-twbs .vb-date .picker__footer {
+    margin-bottom: 5px;
+}
+
+/* Phone */
+
+.vibot-twbs .intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
+    background-color: var(--color-primary-faded);
+}
+
+.vibot-twbs .intl-tel-input .flag-container .selected-flag {
+    background-color: var(--color-grey-faded);
+    border-right: 1px solid #e5e7eb;
+}
+
+.iti-arrow {
+    display: none;
+}
+
+.vibot-twbs .intl-tel-input.allow-dropdown .selected-flag {
+    width: 44px;
+}
+
+/* Helper */
+
+.hidden {
+    display: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.form-group--no-margin .form-group {
+    margin-bottom: 0 !important;
+}
+
+.form-group--no-margin {
+    margin-bottom: 1rem;
+}
+
+.row--no-margin .row {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.row--margin-top .row {
+    margin-top: 1rem !important;
+}
+
+.field--no-margin .form-group,
+.field--no-margin {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.field--no-margin-bottom .form-group,
+.field--no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.field--auto {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.vibot-twbs .separator {
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.vibot-twbs .separator .row {
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+
+.no-label .form-check-label {
+    display: none !important;
+}
+
+.pseudo-disabled input[type="text"] {
+    pointer-events: none;
+    background: #f5f6f6 !important;
+}
+
+.pseudo-disabled input[type="checkbox"] {
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+
+/* Upload */
+
+.vibot-twbs .vb-upload .file_upload .btn.btn-upload.fileinput-button {
+    background: var(--color-primary);
+}
+
+.vibot-twbs .vb-upload .file_upload .btn.btn-upload.fileinput-button:hover {
+    background: var(--color-primary-highlight);
+    color: #fff;
+    border: 0;
+}
+
+.vibot-twbs .vb-upload .file_upload {
+    min-height: initial;
+}
+
+.vibot-twbs .table {
+    margin-bottom: 0;
+}
+
+.vibot-twbs .table p {
+    margin-bottom: 0;
+}
+
+.vibot-twbs .btn-danger:hover {
+    color: #fff;
+    background-color: var(--color-primary-highlight);
+    border: 2px solid var(--color-primary-highlight);
+}
+
+.vibot-twbs .table .files_download td>span {
+    font-weight: 300;
+    padding: 8px 0;
+    display: block;
+}
+
+.vibot-twbs .vb-upload .col-12.progress {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.vibot-twbs .btn.btn-upload.fileinput-button>* {
+    text-transform: none;
+}
+
+/* Upload Memberarea */
+.vibot-twbs .files p:last-child {
+    margin-bottom: 0px !important;
+}
+
+.vibot-twbs .files p {
+    margin: 0px !important;
+    background: initial !important;
+    padding: 8px 0 !important;
+    border-radius: 0px !important;
+    line-height: initial !important;
+}
+
+.vibot-twbs .progress {
+    padding: 0 !important;
+}
+
+.vibot-twbs .vb-upload.add-only .files_download .filedelete-button {
+  display: none;
+}
+
+/* Section */
+
+.section {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.section>.row {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.section.section--no-padding-top>.row {
+    padding-top: 0px !important;
+}
+
+.section.section--no-padding-bottom>.row {
+    padding-bottom: 0px !important;
+}
+
+.section.section--sub {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* Alert */
+.vb-html.alert {
+    position: relative;
+    padding: 1.25rem 1.25rem;
+    /* 0.75rem */
+    margin-bottom: 1rem;
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+    border: 0px solid transparent;
+    border-radius: 0.25rem;
+    color: #383d41;
+    background-color: var(--color-grey-faded);
+    border-color: #d6d8db;
+    box-shadow: var(--border-shadow);
+
+    flex-basis: calc(100% - 30px);
+    margin-left: 15px;
+}
+
+/*.row:has(.vb-html.alert) {
+  margin-left: 0px !important;
+}*/
+
+.vb-html.alert.alert--margin-small {
+    margin-bottom: 0.25rem;
+}
+
+.vb-html.alert.alert--margin-big {
+    margin-bottom: 2.25rem;
+}
+
+.vb-html.alert.alert--grey {
+    color: #383d41;
+    background-color: var(--color-grey-faded);
+    border-color: #d6d8db;
+}
+
+.vb-html.alert.alert--secondary {
+    color: #272f36;
+    background-color: var(--color-secondary-faded);
+    border-color: #d6d8db;
+}
+
+.vb-html.alert.alert--tertiary {
+    color: #ffffff;
+    background-color: var(--color-tertiary);
+    border-color: #d6d8db;
+}
+
+.vb-html.alert.alert--success {
+    color: #272f36;
+    background-color: var(--color-success-faded);
+    border-color: #d6d8db;
+}
+
+.vb-html.alert.alert--danger {
+    color: #ffffff;
+    background-color: var(--color-danger);
+    border-color: #d6d8db;
+}
+
+/* Bubble */
+.bubble {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.bubble .row {
+    position: relative;
+    padding: 1.25rem calc(1.25rem - 15px) !important;
+    /* 0.75rem */
+    border: 0px solid transparent;
+    border-radius: 0.25rem;
+    color: #383d41;
+    background-color: var(--color-grey-faded);
+    border-color: #d6d8db;
+}
+
+.bubble.bubble--warning .row {
+    background-color: var(--color-warning-faded);
+}
+
+/* Footer */
+
+.vibot-twbs .navbar-footer {
+    margin-top: 1rem;
+    margin-bottom: 2.25rem;
+}
+
+.vibot-twbs .navbar-footer .container {
+    padding-left: 15px;
+    padding-right: 35px;
+}
+
+.vibot-twbs .navbar-footer .container>.row {
+    margin: 0;
+    background-color: var(--color-tertiary-faded);
+    justify-content: start;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--border-shadow);
+    border: 0px solid transparent;
+    border-radius: 0.25rem;
+    color: #383d41;
+}
+
+/* Stuff.. */
+#initial-form-loader {
+    display: none;
+}
+
+.affected-person-addon:after {
+    content: 'vom Ticketinhaber';
+    background-color: #616f7b;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 0.25rem;
+    position: absolute;
+    bottom: -11px;
+    left: calc(50% - 6px);
+    transform: translate(-50%, 0%);
+    z-index: 11;
+    font-size: .8em;
+    font-weight: 500;
+    border: 0;
+}
+
+@media only screen and (max-width: 375px) {
+    .affected-person-addon:after {
+        width: 75%;
+        text-align: center;
+    }
+}
