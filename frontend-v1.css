@@ -1,28 +1,3 @@
-:root {
-    --color-primary: #8e0038;
-    --color-primary-highlight: #ad0044;
-    --color-primary-faded: #8e013836;
-    --color-grey: #e2e3e5;
-    --color-grey-highlight: #e9ebeb;
-    --color-grey-faded: #e9ebeb6b;
-    --color-secondary: #f3c591;
-    --color-secondary-faded: #ffeede;
-    --color-tertiary: #0f94a7;
-    --color-tertiary-faded: #0f94a730;
-    --color-danger: #944f6a;
-    --color-success: #a3df8b;
-    --color-success-faded: #a3df8b54;
-    --color-warning: #f3c591;
-    --color-warning-faded: #ffeede;
-    --color-border: #d6d8db;
-
-    --font-color: #4f5b65;
-
-    --border-radius: 0.25rem;
-
-    --border-shadow: 0 0 0px #999;
-}
-
 /* ############## Bootstrap 4.3 resets ############## */
 
 body {
@@ -216,10 +191,6 @@ body {
 .navbar.navbar-expand-lg.navbar-light.bg-light {
     box-shadow: none !important;
     /* background-color: #fff !important; */
-}
-
-.navbar.navbar-header .container {
-    align-items: end;
 }
 
 .navbar.navbar-header .container:after {
@@ -558,69 +529,53 @@ span.navbar-brand {
     font-weight: bold !important;
 }
 
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__c4ca4238a0b923820dcc509a6f75849b"]:after {
+.radio-bubbles .input-group .form-check-label[for="vf_14432_0_14433__c4ca4238a0b923820dcc509a6f75849b"]:after {
     display: block;
     letter-spacing: initial;
     font-size: 80%;
     font-weight: 400;
-    content: 'Erkrankung, die zum Zeitpunkt der Buchung noch nicht bekannt war (z. B. auch PCR- oder ärztlich bestätigte Covid-19-Infektion)';
+    content: "Kosten-Rückerstattung für einen Skipass, Skikurs oder das Skilehrertraining, sowie Prüfung der Austellung eines Come-Back-Gutscheins.";
 }
 
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__c81e728d9d4c2f636f067f89cc14862c"]:after {
+.radio-bubbles .input-group .form-check-label[for="vf_14432_0_14433__c81e728d9d4c2f636f067f89cc14862c"]:after {
     display: block;
     letter-spacing: initial;
     font-size: 80%;
     font-weight: 400;
-    content: 'Eine Unfallverletzung wie zum Beispiel ein verstauchter Knöchel oder gebrochener Unterarm';
+    content: 'Rettungs- und Bergungsschutz mit Assistance im Zuge der `Safety +` Versicherung.';
 }
 
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__eccbc87e4b5ce2fe28308fd9f2a7baf3"]:after {
+.radio-bubbles .input-group .form-check-label[for="vf_14432_0_14433__eccbc87e4b5ce2fe28308fd9f2a7baf3"]:after {
     display: block;
     letter-spacing: initial;
     font-size: 80%;
     font-weight: 400;
-    content: 'Schwangerschaft oder damit einhergehende Umstände';
+    content: 'Unfall-Invaliditätsversicherung ab 70% im Zuge der `Safety +` Versicherung.';
 }
 
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__a87ff679a2f3e71d9181a67b7542122c"]:after {
+.radio-bubbles .input-group .form-check-label[for="vf_14432_0_14433__a87ff679a2f3e71d9181a67b7542122c"]:after {
     display: block;
     letter-spacing: initial;
     font-size: 80%;
     font-weight: 400;
-    content: 'Zum Beispiel ein Schaden verursacht durch Feuer oder einem Wasserrohrbruch';
+    content: 'Unfall-Ablebensschutz mit Rückführung des Verstorbenen im Zuge der `Safety +` Versicherung.';
 }
 
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__e4da3b7fbbce2345d7772b0674a318d5"]:after {
+.radio-bubbles .input-group .form-check-label[for="vf_14432_0_14433__e4da3b7fbbce2345d7772b0674a318d5"]:after {
     display: block;
     letter-spacing: initial;
     font-size: 80%;
     font-weight: 400;
-    content: 'Mehr als zwei Stunden Verspätung, wodurch mehr als die Hälfte der Veranstaltung versäumt wurde';
+    content: 'Privathaftpflicht bei der Ausübung von Schneesport im Zuge der `Safety +` Versicherung.';
 }
 
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__1679091c5a880faf6fb5e6087eb1b2dc"]:after {
+/*.radio-bubbles .input-group .form-check-label[for="vf_14432_0_14433__1679091c5a880faf6fb5e6087eb1b2dc"]:after {
     display: block;
     letter-spacing: initial;
     font-size: 80%;
     font-weight: 400;
-    content: 'Die Distanz vom neuen Wohnort zum Veranstaltungsort beträgt mehr als 100 km';
-}
-
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__8f14e45fceea167a5a36dedd4bea2543"]:after {
-    display: block;
-    letter-spacing: initial;
-    font-size: 80%;
-    font-weight: 400;
-    content: 'Todesfall eines Teilnehmers, Angehörigen oder einer Betreuungsperson';
-}
-
-.radio-bubbles .input-group .form-check-label[for="vf_1705_0_1706__c9f0f895fb98ab9159f51fd0297e236d"]:after {
-    display: block;
-    letter-spacing: initial;
-    font-size: 80%;
-    font-weight: 400;
-    content: 'Ein Termin zur Spende oder zum Empfang von Organen und Geweben im Rahmen des Transplantationsgesetzes';
-}
+    content: 'Accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.';
+}*/
 
 /* Autocomplete */
 
@@ -666,8 +621,38 @@ span.navbar-brand {
     display: none;
 }
 
-/* Date Picker */
+/* Date / Datetime Picker */
 
+.vibot-twbs .vb-datetime.datepicker--popup .picker--time {
+    max-width: 100%;
+}
+
+.vibot-twbs .vb-datetime .picker--focused .picker__list-item--highlighted {
+    color: #fff;
+    background: var(--color-primary);
+}
+
+.vibot-twbs .vb-datetime .picker__list-item:hover {
+    color: var(--color-primary);;
+    background: none;
+    border-color: var(--color-primary);
+}
+
+.vibot-twbs .vb-datetime.datepicker--popup .picker--time .picker__list li[role="presentation"] {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: #f2f2f2;
+    z-index: 99;
+}
+
+.vibot-twbs .vb-datetime.datepicker--popup .picker--time .picker__list {
+    padding-bottom: 0;
+}
+
+.vibot-twbs .vb-datetime.datepicker--popup .picker.picker--opened,
 .vibot-twbs .vb-date.datepicker--popup .picker.picker--opened {
     position: fixed;
     top: 0;
@@ -677,6 +662,7 @@ span.navbar-brand {
     background-color: #00000080;
 }
 
+.vibot-twbs .vb-datetime.datepicker--popup .picker.picker--opened .picker__holder,
 .vibot-twbs .vb-date.datepicker--popup .picker.picker--opened .picker__holder {
     position: fixed;
     top: 50%;
@@ -686,6 +672,7 @@ span.navbar-brand {
 }
 
 @media (max-width: 768px) {
+    .vibot-twbs .vb-datetime.datepicker--popup .picker.picker--opened .picker__holder,
     .vibot-twbs .vb-date.datepicker--popup .picker.picker--opened .picker__holder {
         width: 90%;
     }
@@ -700,31 +687,38 @@ span.navbar-brand {
     box-shadow: none;
 }
 
+.vibot-twbs .vb-datetime .vb-date-dd span.icon-dd,
 .vibot-twbs .vb-date .vb-date-dd span.icon-dd {
     color: var(--color-primary);
 }
 
+.vibot-twbs .vb-datetime .vb-date-dd span.icon-dd:before,
 .vibot-twbs .vb-date .vb-date-dd span.icon-dd:before {
     margin-top: 2px;
 }
 
+.vibot-twbs .vb-datetime .picker--opened .picker__day--highlighted,
 .vibot-twbs .vb-date .picker--opened .picker__day--highlighted {
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
 
+.vibot-twbs .vb-datetime .picker--opened .picker__day--today:before,
 .vibot-twbs .vb-date .picker--opened .picker__day--today:before {
     border-top: 0.5em solid var(--color-primary);
 }
 
+.vibot-twbs .vb-datetime .picker--opened .picker__nav--next:before,
 .vibot-twbs .vb-date .picker--opened .picker__nav--next:before {
     border-left: 0.75em solid var(--color-primary);
 }
 
+.vibot-twbs .vb-datetime .picker--opened .picker__nav--prev:before,
 .vibot-twbs .vb-date .picker--opened .picker__nav--prev:before {
     border-right: 0.75em solid var(--color-primary);
 }
 
+.vibot-twbs .vb-datetime .picker__button--today,
 .vibot-twbs .vb-date .picker__button--today {
     color: #000;
     border: 2px solid transparent;
@@ -744,12 +738,14 @@ span.navbar-brand {
     border-top: 0.66em solid var(--color-primary);
 }
 
+.vibot-twbs .vb-datetime .picker__button--today:hover,
 .vibot-twbs .vb-date .picker__button--today:hover {
     color: #4f5b65;
     background-color: transparent;
     border: 2px solid #e2e6ea;
 }
 
+.vibot-twbs .vb-datetime .picker__button--clear,
 .vibot-twbs .vb-date .picker__button--clear {
     color: #fff;
     border: 2px solid transparent;
@@ -765,6 +761,7 @@ span.navbar-brand {
     margin: 5px;
 }
 
+.vibot-twbs .vb-datetime .picker__button--close,
 .vibot-twbs .vb-date .picker__button--close {
     color: #000;
     border: 2px solid transparent;
@@ -780,6 +777,7 @@ span.navbar-brand {
     margin: 5px;
 }
 
+.vibot-twbs .vb-datetime .picker__footer,
 .vibot-twbs .vb-date .picker__footer {
     margin-bottom: 5px;
 }
@@ -790,18 +788,24 @@ span.navbar-brand {
     background-color: var(--color-primary-faded);
 }
 
-.vibot-twbs .intl-tel-input .flag-container .selected-flag {
+/*.vibot-twbs .intl-tel-input .flag-container .selected-flag {
     background-color: var(--color-grey-faded);
     border-right: 1px solid #e5e7eb;
-}
+}*/
 
 .iti-arrow {
     display: none;
 }
 
 .vibot-twbs .intl-tel-input.allow-dropdown .selected-flag {
-    width: 44px;
+    width: auto;
+    min-width: 0;
 }
+
+.vibot-twbs .intl-tel-input .flag-container .selected-flag .iti-flag {
+    margin-right: 0;
+}
+
 
 /* Helper */
 
@@ -902,8 +906,8 @@ span.navbar-brand {
 
 .vibot-twbs .btn-danger:hover {
     color: #fff;
-    background-color: var(--color-primary-highlight);
-    border: 2px solid var(--color-primary-highlight);
+    background-color: var(--color-danger-highlight);
+    border: 2px solid var(--color-danger-highlight);
 }
 
 .vibot-twbs .table .files_download td>span {
@@ -965,6 +969,11 @@ span.navbar-brand {
 .section.section--sub {
     padding-left: 5px !important;
     padding-right: 5px !important;
+}
+
+.section.section-container {
+    margin-left: -12.5px;
+    margin-right: -12.5px;
 }
 
 /* Alert */
@@ -1099,4 +1108,8 @@ span.navbar-brand {
         width: 75%;
         text-align: center;
     }
+}
+
+.vb-singleselect .form-check-label {
+  word-break: break-all;
 }
