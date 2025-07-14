@@ -1113,3 +1113,8 @@ span.navbar-brand {
 /*.vb-singleselect .form-check-label {
   word-break: break-all;
 }*/
+
+.vibot-twbs .badge-primary {
+    color: #fff;
+    background-color: #616f7b;
+}
