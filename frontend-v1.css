@@ -1118,3 +1118,14 @@ span.navbar-brand {
     color: #fff;
     background-color: #616f7b;
 }
+
+.vibot-twbs .btn-primary {
+    color: #fff;
+    background-color: #8e0237;
+    border-color: #8e0438;
+}
+
+.vibot-twbs .vb-day-picker .vb-day-picker-days .vb-day-picker-day.is-selected span {
+    background-color: #8e0237;
+    color: #fff;
+}
