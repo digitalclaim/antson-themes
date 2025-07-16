@@ -1,0 +1,202 @@
+/************************************ DCM ************************************/
+
+/* GENERAL */
+
+.container.vibot-twbs {
+    padding: 30px;
+    background: none;
+}
+
+.container.vibot-twbs .navbar {
+    display: none !important;
+}
+
+.vibot-twbs-body form.vibot-twbs {
+    padding-top: 0px;
+}
+
+form.vibot-twbs {
+    font-family: 'Arial';
+}
+
+/* HELPER */
+
+.vibot-twbs .hidden {
+    display: none !important;
+}
+
+.pseudo-disabled input:not([type]),
+.vibot-twbs .pseudo-disabled input[type="text"] {
+    pointer-events: none;
+    background: #f5f6f6 !important;
+}
+
+.vibot-twbs .pseudo-disabled input[type="checkbox"] {
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+
+.vibot-twbs .no-label .form-check-label {
+    display: none !important;
+}
+
+.vibot-twbs .field--no-margin .form-group,
+.vibot-twbs .field--no-margin {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.vibot-twbs .field--no-padding-right {
+    padding-right: 0 !important;
+}
+
+.vibot-twbs .field--no-padding-left {
+    padding-left: 0 !important;
+}
+
+.vibot-twbs .field--highlighted input.form-control {
+    border: 2px solid #0d6efd !important;
+    background-color: #0c6efd24 !important;
+}
+
+.vibot-twbs .vb-html.as-field>div {
+    margin-top: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #f6f7f7;
+    border: 1px solid #e2e6ea;
+    padding-left: 10px;
+    border-radius: var(--border-radius);
+    height: 100%;
+}
+
+.vibot-twbs .vb-html.as-label>div {
+    color: #616f7b;
+    letter-spacing: 1px;
+    font-size: .875em;
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+
+.vibot-twbs .field--note textarea,
+.vibot-twbs .field--note .file_upload {
+    background: #fffbb6 !important;
+}
+
+/* DATETIME */
+
+.vibot-twbs .vb-date .vb-date-dd__spacer {
+    display: none;
+}
+
+/* CLONE */
+
+.vibot-twbs .vb-duplicate.vb-duplicate--gutter > .row:not(:first-child) {
+    margin-top: 15px;
+}
+
+.vibot-twbs .vb-duplicate.vb-duplicate--disabled .vb-bs-btn-clone-add,
+.vibot-twbs .vb-duplicate.vb-duplicate--disabled .vb-bs-btn-clone-remove {
+    display: none;
+}
+
+.vibot-twbs .vb-duplicate.vb-duplicate--inline>.row>.col-12:last-of-type {
+    width: auto;
+    flex: auto;
+    display: flex;
+    align-items: center;
+}
+
+.vibot-twbs .vb-duplicate.vb-duplicate--inline.vb-duplicate--dense .btn {
+    margin-top: 0px;
+}
+
+.vibot-twbs .vb-duplicate.vb-duplicate--inline .vb-bs-btn-clone-remove {
+    margin-right: 8px;
+}
+
+/* SECTION */
+
+.vibot-twbs .vb-duplicate.section {
+    margin-top: 15px;
+}
+
+/* GROUP */
+
+.vibot-twbs .group {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.vibot-twbs .group > .row {
+    position: relative;
+    padding: 1.25rem calc(1.25rem - 15px) !important;
+    border: 0px solid transparent;
+    border-radius: 0.25rem;
+    color: #383d41;
+    background-color: #eeeeee;
+    border-color: #d6d8db;
+
+    box-shadow: 0px 0px 4.0px hsl(0deg 0% 0% / 23%);
+}
+
+/* DIVIDER */
+
+.vibot-twbs .vb-duplicate.divider {
+    margin-bottom: 15px;
+}
+
+/* MULTISELECT */
+
+.vibot-twbs .vb-multiselect.vb-multiselect--column .input-group {
+    flex-direction: column;
+}
+
+/* HTML */
+
+.vibot-twbs .vb-html {
+    line-height: 1.25;
+}
+
+/* ALERT */
+
+.vibot-twbs .vb-html.alert {
+    padding: 1.25rem 1.25rem;
+    border: 0 solid #fff0;
+    border-radius: 0.25rem;
+    flex-basis: calc(100% - 0px);
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+/* ARGUS AI */
+
+.group.ai .row {
+    background: linear-gradient(to right, #196bf6, #4184f6, #5d92ec);
+    box-shadow: 0px 0px 8.0px hsl(0deg 0% 0% / 23%);
+    color: white;
+}
+
+.group.ai > .row::after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  width: 35px;
+  height: 35px;
+content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='m19.46 8l.79-1.75L22 5.46a.5.5 0 0 0 0-.91l-1.75-.79L19.46 2a.5.5 0 0 0-.91 0l-.79 1.75l-1.76.79a.5.5 0 0 0 0 .91l1.75.79l.79 1.76c.18.39.74.39.92 0M11.5 9.5L9.91 6c-.35-.78-1.47-.78-1.82 0L6.5 9.5L3 11.09c-.78.36-.78 1.47 0 1.82l3.5 1.59L8.09 18c.36.78 1.47.78 1.82 0l1.59-3.5l3.5-1.59c.78-.36.78-1.47 0-1.82zm7.04 6.5l-.79 1.75l-1.75.79a.5.5 0 0 0 0 .91l1.75.79l.79 1.76a.5.5 0 0 0 .91 0l.79-1.75l1.76-.79a.5.5 0 0 0 0-.91l-1.75-.79l-.79-1.76a.508.508 0 0 0-.92 0'/%3E%3C/svg%3E");
+  
+}
+
+.group.ai .bullet {
+  margin-top: 10px;
+  font-weight: 900;
+  color: white;
+}
+
+/* HACKS: */
+
+.vibot-twbs .no-label-hack label {
+    display: none !important;
+}
