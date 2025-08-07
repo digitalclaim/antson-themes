@@ -263,17 +263,6 @@ span.navbar-brand {
     border-radius: 0.25rem;
 }
 
-.vibot-twbs .input-group .btn-group .btn-secondary:not(:disabled):not(.disabled):is(:active,.active) {
-    color: #fff;
-    background-color: var(--colo-primary);
-    border-color: var(--color-primary);
-}
-
-.vibot-twbs .input-group .btn-group .btn-secondary:focus-within {
-    box-shadow: 0 0 0 .2rem rgb(from var(--color-primary) r g b/25%);
-    z-index: 1
-}
-
 @media only screen and (max-width: 767px) {
     .vibot-twbs .btn-group,
     .vibot-twbs .btn-group-vertical {
