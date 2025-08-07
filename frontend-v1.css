@@ -396,6 +396,7 @@ span.navbar-brand {
     padding: 0.5rem 1rem;
     transition: all ease-in-out 0.25s;
     border: 2px solid transparent;
+    margin: 10px 0;
 }
 
 .vibot-twbs .vb-btn-back.btn.btn-default {
