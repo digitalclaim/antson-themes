@@ -57,7 +57,8 @@ small {
 }
 
 .form-control {
-    height: calc(1.5em + 1rem + 2px);
+    /*height: calc(1.5em + 1rem + 2px);*/
+    height: auto;
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
