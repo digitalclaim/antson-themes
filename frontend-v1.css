@@ -450,6 +450,17 @@ span.navbar-brand {
     margin-right: 0;
 }
 
+.vibot-twbs .vb-multiselect .form-check-group .form-check-inline {
+    display: inline-flex;
+    align-items: start;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+}
+
+.vibot-twbs .vb-multiselect .form-check-group .form-check-inline .form-check-input {
+    margin-top: 4px;
+}
+
 /* Single Select */
 
 .vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary:not(:disabled):not(.disabled).active {
@@ -634,9 +645,18 @@ span.navbar-brand {
 }
 
 .vibot-twbs .vb-datetime .picker__list-item:hover {
-    color: var(--color-primary);;
+    color: var(--color-primary);
     background: none;
     border-color: var(--color-primary);
+}
+
+.vibot-twbs .vb-day-picker .vb-day-picker-days .vb-day-picker-day.is-highlighted span {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.vibot-twbs .vb-date-picker-view-proxy .vb-day-picker-day.is-highlighted {
+    color: #fff;
 }
 
 .vibot-twbs .vb-datetime.datepicker--popup .picker--time .picker__list li[role="presentation"] {
