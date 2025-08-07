@@ -300,6 +300,15 @@ span.navbar-brand {
     box-shadow: 0 0 0 0.2rem var(--color-primary-faded);
 }
 
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-group.btn-group-toggle  {
+  counter-reset: counter-btn-group-toggle;
+} 
+
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-group.btn-group-toggle .btn.btn-secondary::before {
+  counter-increment: counter-btn-group-toggle;
+  content: counter(counter-btn-group-toggle) ". ";
+}
+
 @media only screen and (max-width: 767px) {
     .vibot-twbs .btn-group,
     .vibot-twbs .btn-group-vertical {
