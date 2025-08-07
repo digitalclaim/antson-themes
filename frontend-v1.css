@@ -883,6 +883,10 @@ span.navbar-brand {
     margin-bottom: 5px;
 }
 
+.vibot-twbs .vb-date .vb-date-dd-group .form-control  {
+    border-radius: var(--border-radius) !important;
+}
+
 /* Phone */
 
 .vibot-twbs .intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
