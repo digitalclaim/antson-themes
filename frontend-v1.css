@@ -254,9 +254,16 @@ span.navbar-brand {
 }
 
 /* Button Group */
+.vibot-twbs .btn-group-toggle {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary {
+    border-radius: 0.25rem;
+}
 
 @media only screen and (max-width: 767px) {
-
     .vibot-twbs .btn-group,
     .vibot-twbs .btn-group-vertical {
         flex-wrap: wrap !important;
@@ -268,7 +275,7 @@ span.navbar-brand {
         width: 100%;
     }
 
-    .vibot-twbs .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+    /*.vibot-twbs .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
     .vibot-twbs .btn-group>.btn-group:not(:last-child)>.btn {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
@@ -280,7 +287,7 @@ span.navbar-brand {
         border-top-right-radius: 0 !important;
         border-top-left-radius: 0;
         border-bottom-left-radius: var(--border-radius);
-    }
+    }*/
 }
 
 /* Progress */
