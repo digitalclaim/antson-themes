@@ -290,8 +290,14 @@ span.navbar-brand {
     gap: 0.5rem;
 }
 
-.vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary {
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-group-toggle .btn-secondary {
     border-radius: 0.25rem;
+}
+
+.vibot-twbs .vb-singleselect .form-group .input-group .btn-group-toggle .btn.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem var(--color-primary-faded);
 }
 
 @media only screen and (max-width: 767px) {
