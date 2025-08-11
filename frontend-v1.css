@@ -1031,11 +1031,12 @@ span.navbar-brand {
 }
 
 .vibot-twbs .vb-upload .fileinput-button:focus,
-.vibot-twbs .vb-upload .fileinput-button:focus-within {
+.vibot-twbs .vb-upload .fileinput-button:focus-within                                                                                   {
     color: #fff !important;
-    background-color: var(--color-primary) !important;
+    background: var(--color-primary-highlight) !important;
+    border-color: var(--color-primary-highlight) !important;
+    box-shadow: 0 0 0 0.2rem var(--color-primary-faded) !important;
 }
-
 /* Upload Memberarea */
 .vibot-twbs .files p:last-child {
     margin-bottom: 0px !important;
