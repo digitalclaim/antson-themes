@@ -1030,6 +1030,12 @@ span.navbar-brand {
     text-transform: none;
 }
 
+.vibot-twbs .vb-upload .fileinput-button:focus,
+.vibot-twbs .vb-upload .fileinput-button:focus-within {
+    color: #fff !important;
+    background-color: var(--color-primary) !important;
+}
+
 /* Upload Memberarea */
 .vibot-twbs .files p:last-child {
     margin-bottom: 0px !important;
@@ -1049,12 +1055,6 @@ span.navbar-brand {
 
 .vibot-twbs .vb-upload.add-only .files_download .filedelete-button {
   display: none;
-}
-
-.vibot-twbs .vb-upload .fileinput-button:focus,
-.vibot-twbs .vb-upload .fileinput-button:focus-within,{
-    color: #fff !important;
-    background-color: var(--color-primary) !important;
 }
 
 /* Section */
