@@ -525,7 +525,11 @@ span.navbar-brand {
     appearance: none;
 }
 
-.vibot-twbs .vb-singleselect.dropdown-layout .input-group {
+/*.vibot-twbs .vb-singleselect .form-group .input-group span.icon-dd:before {
+    color: #ced4da;
+}*/
+
+/*.vibot-twbs .vb-singleselect.dropdown-layout .input-group {
     position: relative;
 }
 
@@ -542,7 +546,7 @@ span.navbar-brand {
     border-color: rgba(0,0,0,.25) transparent transparent transparent;
     pointer-events: none;
     z-index: 4;
-}
+}*/
 
 .vibot-twbs .vb-singleselect .form-group .input-group .btn-secondary:not(:disabled):not(.disabled).active {
     color: #fff;
