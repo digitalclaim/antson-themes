@@ -12,7 +12,7 @@
     --color-tertiary-faded: #0f94a730;
     --color-danger: #944f6a;
     --color-danger-highlight: #ad0044;
-    --color-danger-light: #ffa3a3;
+    --color-danger-light: #fd8989;
     --color-success: #a3df8b;
     --color-success-faded: #a3df8b54;
     --color-warning: #f3c591;
@@ -1171,6 +1171,7 @@ span.navbar-brand {
     color: #383d41;
     background-color: var(--color-grey-faded);
     border-color: #d6d8db;
+    margin-right: 5px;
 }
 
 .bubble.bubble--warning .row {
