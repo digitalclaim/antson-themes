@@ -12,6 +12,7 @@
     --color-tertiary-faded: #0f94a730;
     --color-danger: #944f6a;
     --color-danger-highlight: #ad0044;
+    --color-danger-light: #ffa3a3;
     --color-success: #a3df8b;
     --color-success-faded: #a3df8b54;
     --color-warning: #f3c591;
@@ -1177,7 +1178,8 @@ span.navbar-brand {
 }
 
 .bubble.bubble--danger .row {
-    background-color: var(--color-danger);
+    background-color: var(--color-danger-light);
+    color: #fff;
 }
 
 /* Footer */
