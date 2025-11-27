@@ -1158,8 +1158,8 @@ span.navbar-brand {
 
 /* Bubble */
 .bubble {
-    margin-right: 5px;
-    margin-left: 5px;
+    /*margin-right: 5px;
+    margin-left: 5px;*/
 }
 
 .bubble > .row {
@@ -1179,7 +1179,7 @@ span.navbar-brand {
 }
 
 .bubble.bubble--danger .row {
-    background-color: var(--color-danger-light);
+    background-color: var(--color-danger-highlight);
 }
 
 .bubble.bubble--danger .row,
