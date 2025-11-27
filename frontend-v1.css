@@ -1179,7 +1179,13 @@ span.navbar-brand {
 
 .bubble.bubble--danger .row {
     background-color: var(--color-danger-light);
-    color: #fff;
+}
+
+.bubble.bubble--danger .row,
+.bubble.bubble--danger .row label
+.bubble.bubble--danger .row .text-muted,
+.bubble.bubble--danger .row .form-check-label {
+    color: #fff !important;
 }
 
 /* Footer */
