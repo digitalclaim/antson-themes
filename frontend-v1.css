@@ -1161,7 +1161,7 @@ span.navbar-brand {
     margin-left: 5px;
 }
 
-.bubble .row {
+.bubble > .row {
     position: relative;
     padding: 1.25rem calc(1.25rem - 15px) !important;
     /* 0.75rem */
@@ -1174,6 +1174,10 @@ span.navbar-brand {
 
 .bubble.bubble--warning .row {
     background-color: var(--color-warning-faded);
+}
+
+.bubble.bubble--danger .row {
+    background-color: var(--color-danger);
 }
 
 /* Footer */
