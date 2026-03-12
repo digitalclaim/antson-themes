@@ -699,7 +699,7 @@ span.navbar-brand {
     float: right;
 }
 
-.vibot-twbs .vb-duplicate.tabular .row {
+.vibot-twbs .vb-duplicate.tabular .row.container-occurrence {
     margin-bottom: 1rem;
 }
 
