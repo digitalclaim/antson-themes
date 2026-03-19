@@ -1084,9 +1084,10 @@ span.navbar-brand {
     padding-bottom: 0px !important;
 }
 
-.section.section--sub {
+.section.section--sub>.row {
     /*padding-left: 5px !important;
     padding-right: 5px !important;*/
+    margin: 0 !important;
 }
 
 .section.section-container>.row {
