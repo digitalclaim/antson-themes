@@ -1194,6 +1194,10 @@ span.navbar-brand {
     color: #fff !important;
 }
 
+.bubble.bubble--no-margin>.row {
+    margin: 0px!important;
+}
+
 /* Footer */
 
 .vibot-twbs .navbar-footer {
