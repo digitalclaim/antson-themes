@@ -686,6 +686,16 @@ span.navbar-brand {
     color: #9ba7af;
 }
 
+.vb-autocomplete--single .vibot-twbs .autocomplete.form-control {
+    flex-wrap: wrap !important;
+}
+
+.vb-autocomplete--single .vibot-twbs .autocomplete.form-control .autocomplete-input {
+    flex: 1 1 0px !important;
+    width: 0px !important;
+    min-width: 10px !important;
+}
+
 /* Tabular */
 
 .vibot-twbs .vb-duplicate .vb-bs-btn-clone-add {
