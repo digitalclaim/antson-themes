@@ -42,9 +42,11 @@
 .vibot-twbs .row {
   display: grid !important;
   grid-template-columns: repeat(12, 1fr) !important;
-  grid-gap: 10px 30px !important; /* Set your global gap here */
+  grid-gap: 0px 30px !important;
   margin-right: 0 !important;
   margin-left: 0 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* 2. Kill BS4's clearfix pseudo-elements (crucial for grid) */
@@ -1027,6 +1029,12 @@ span.navbar-brand {
 
 
 /* Upload */
+
+.vibot-twbs .vb-upload .file_upload .fileupload-buttonbar {
+  grid-template-columns: 1fr !important;
+  justify-items: center;
+  align-items: center;
+}
 
 .vibot-twbs .vb-upload .file_upload .btn.btn-upload.fileinput-button {
   background: var(--color-primary);
