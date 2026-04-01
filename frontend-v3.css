@@ -1299,3 +1299,9 @@ span.navbar-brand {
   color: #fff;
 }
 
+@media only screen and (max-width: 380px) {
+  .vibot-twbs .row {
+    grid-gap: 0 10px !important;
+  }
+}
+
