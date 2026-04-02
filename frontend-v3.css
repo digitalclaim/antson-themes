@@ -30,10 +30,6 @@
   --primary-hover: var(--color-primary-highlight);
 }
 
-#vibot-loader .spinner {
-  border-bottom-color: var(--color-primary);
-}
-
 * {
   -webkit-tap-highlight-color: transparent;
 }
@@ -1093,7 +1089,8 @@ span.navbar-brand {
   text-transform: none;
 }
 
-.vibot-twbs .vb-upload .file_upload .unsaved-badge {
+.vibot-twbs .vb-upload .file_upload .unsaved-badge,
+.vibot-twbs .vb-upload .file_upload .badge-primary {
   display: inline-flex;
   align-items: center;
 }
