@@ -30,6 +30,10 @@
   --primary-hover: var(--color-primary-highlight);
 }
 
+#vibot-loader .spinner {
+  border-bottom-color: var(--color-primary);
+}
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
@@ -72,21 +76,23 @@
   width: 100% !important;
 }
 
+
+
 /* =========================================
    4. BASE GRID SPANS (Includes col-xs)
    ========================================= */
-.col-1,  .col-xs-1  { grid-column: span 1 !important; }
-.col-2,  .col-xs-2  { grid-column: span 2 !important; }
-.col-3,  .col-xs-3  { grid-column: span 3 !important; }
-.col-4,  .col-xs-4  { grid-column: span 4 !important; }
-.col-5,  .col-xs-5  { grid-column: span 5 !important; }
-.col-6,  .col-xs-6  { grid-column: span 6 !important; }
-.col-7,  .col-xs-7  { grid-column: span 7 !important; }
-.col-8,  .col-xs-8  { grid-column: span 8 !important; }
-.col-9,  .col-xs-9  { grid-column: span 9 !important; }
-.col-10, .col-xs-10 { grid-column: span 10 !important; }
-.col-11, .col-xs-11 { grid-column: span 11 !important; }
-.col-12, .col-xs-12 { grid-column: span 12 !important; }
+.vibot-twbs .col-2,  .vibot-twbs .col-xs-2  { grid-column: span 2 !important; }
+.vibot-twbs .col-3,  .vibot-twbs .col-xs-3  { grid-column: span 3 !important; }
+.vibot-twbs .col-1,  .vibot-twbs .col-xs-1  { grid-column: span 1 !important; }
+.vibot-twbs .col-4,  .vibot-twbs .col-xs-4  { grid-column: span 4 !important; }
+.vibot-twbs .col-5,  .vibot-twbs .col-xs-5  { grid-column: span 5 !important; }
+.vibot-twbs .col-6,  .vibot-twbs .col-xs-6  { grid-column: span 6 !important; }
+.vibot-twbs .col-7,  .vibot-twbs .col-xs-7  { grid-column: span 7 !important; }
+.vibot-twbs .col-8,  .vibot-twbs .col-xs-8  { grid-column: span 8 !important; }
+.vibot-twbs .col-9,  .vibot-twbs .col-xs-9  { grid-column: span 9 !important; }
+.vibot-twbs .col-10, .vibot-twbs .col-xs-10 { grid-column: span 10 !important; }
+.vibot-twbs .col-11, .vibot-twbs .col-xs-11 { grid-column: span 11 !important; }
+.vibot-twbs .col-12, .vibot-twbs .col-xs-12 { grid-column: span 12 !important; }
 
 /* =========================================
    5. RESPONSIVE BREAKPOINTS
@@ -94,69 +100,67 @@
 
 /* SMALL (sm) */
 @media (min-width: 576px) {
-  .col-sm-1  { grid-column: span 1 !important; }
-  .col-sm-2  { grid-column: span 2 !important; }
-  .col-sm-3  { grid-column: span 3 !important; }
-  .col-sm-4  { grid-column: span 4 !important; }
-  .col-sm-5  { grid-column: span 5 !important; }
-  .col-sm-6  { grid-column: span 6 !important; }
-  .col-sm-7  { grid-column: span 7 !important; }
-  .col-sm-8  { grid-column: span 8 !important; }
-  .col-sm-9  { grid-column: span 9 !important; }
-  .col-sm-10 { grid-column: span 10 !important; }
-  .col-sm-11 { grid-column: span 11 !important; }
-  .col-sm-12 { grid-column: span 12 !important; }
+  .vibot-twbs .col-sm-1  { grid-column: span 1 !important; }
+  .vibot-twbs .col-sm-2  { grid-column: span 2 !important; }
+  .vibot-twbs .col-sm-3  { grid-column: span 3 !important; }
+  .vibot-twbs .col-sm-4  { grid-column: span 4 !important; }
+  .vibot-twbs .col-sm-5  { grid-column: span 5 !important; }
+  .vibot-twbs .col-sm-6  { grid-column: span 6 !important; }
+  .vibot-twbs .col-sm-7  { grid-column: span 7 !important; }
+  .vibot-twbs .col-sm-8  { grid-column: span 8 !important; }
+  .vibot-twbs .col-sm-9  { grid-column: span 9 !important; }
+  .vibot-twbs .col-sm-10 { grid-column: span 10 !important; }
+  .vibot-twbs .col-sm-11 { grid-column: span 11 !important; }
+  .vibot-twbs .col-sm-12 { grid-column: span 12 !important; }
 }
 
 /* MEDIUM (md) */
 @media (min-width: 768px) {
-  .col-md-1  { grid-column: span 1 !important; }
-  .col-md-2  { grid-column: span 2 !important; }
-  .col-md-3  { grid-column: span 3 !important; }
-  .col-md-4  { grid-column: span 4 !important; }
-  .col-md-5  { grid-column: span 5 !important; }
-  .col-md-6  { grid-column: span 6 !important; }
-  .col-md-7  { grid-column: span 7 !important; }
-  .col-md-8  { grid-column: span 8 !important; }
-  .col-md-9  { grid-column: span 9 !important; }
-  .col-md-10 { grid-column: span 10 !important; }
-  .col-md-11 { grid-column: span 11 !important; }
-  .col-md-12 { grid-column: span 12 !important; }
+  .vibot-twbs .col-md-1  { grid-column: span 1 !important; }
+  .vibot-twbs .col-md-2  { grid-column: span 2 !important; }
+  .vibot-twbs .col-md-3  { grid-column: span 3 !important; }
+  .vibot-twbs .col-md-4  { grid-column: span 4 !important; }
+  .vibot-twbs .col-md-5  { grid-column: span 5 !important; }
+  .vibot-twbs .col-md-6  { grid-column: span 6 !important; }
+  .vibot-twbs .col-md-7  { grid-column: span 7 !important; }
+  .vibot-twbs .col-md-8  { grid-column: span 8 !important; }
+  .vibot-twbs .col-md-9  { grid-column: span 9 !important; }
+  .vibot-twbs .col-md-10 { grid-column: span 10 !important; }
+  .vibot-twbs .col-md-11 { grid-column: span 11 !important; }
+  .vibot-twbs .col-md-12 { grid-column: span 12 !important; }
 }
 
 /* LARGE (lg) */
 @media (min-width: 992px) {
-  .col-lg-1  { grid-column: span 1 !important; }
-  .col-lg-2  { grid-column: span 2 !important; }
-  .col-lg-3  { grid-column: span 3 !important; }
-  .col-lg-4  { grid-column: span 4 !important; }
-  .col-lg-5  { grid-column: span 5 !important; }
-  .col-lg-6  { grid-column: span 6 !important; }
-  .col-lg-7  { grid-column: span 7 !important; }
-  .col-lg-8  { grid-column: span 8 !important; }
-  .col-lg-9  { grid-column: span 9 !important; }
-  .col-lg-10 { grid-column: span 10 !important; }
-  .col-lg-11 { grid-column: span 11 !important; }
-  .col-lg-12 { grid-column: span 12 !important; }
+  .vibot-twbs .col-lg-1  { grid-column: span 1 !important; }
+  .vibot-twbs .col-lg-2  { grid-column: span 2 !important; }
+  .vibot-twbs .col-lg-3  { grid-column: span 3 !important; }
+  .vibot-twbs .col-lg-4  { grid-column: span 4 !important; }
+  .vibot-twbs .col-lg-5  { grid-column: span 5 !important; }
+  .vibot-twbs .col-lg-6  { grid-column: span 6 !important; }
+  .vibot-twbs .col-lg-7  { grid-column: span 7 !important; }
+  .vibot-twbs .col-lg-8  { grid-column: span 8 !important; }
+  .vibot-twbs .col-lg-9  { grid-column: span 9 !important; }
+  .vibot-twbs .col-lg-10 { grid-column: span 10 !important; }
+  .vibot-twbs .col-lg-11 { grid-column: span 11 !important; }
+  .vibot-twbs .col-lg-12 { grid-column: span 12 !important; }
 }
 
 /* EXTRA LARGE (xl) */
 @media (min-width: 1200px) {
-  .col-xl-1  { grid-column: span 1 !important; }
-  .col-xl-2  { grid-column: span 2 !important; }
-  .col-xl-3  { grid-column: span 3 !important; }
-  .col-xl-4  { grid-column: span 4 !important; }
-  .col-xl-5  { grid-column: span 5 !important; }
-  .col-xl-6  { grid-column: span 6 !important; }
-  .col-xl-7  { grid-column: span 7 !important; }
-  .col-xl-8  { grid-column: span 8 !important; }
-  .col-xl-9  { grid-column: span 9 !important; }
-  .col-xl-10 { grid-column: span 10 !important; }
-  .col-xl-11 { grid-column: span 11 !important; }
-  .col-xl-12 { grid-column: span 12 !important; }
+  .vibot-twbs .col-xl-1  { grid-column: span 1 !important; }
+  .vibot-twbs .col-xl-2  { grid-column: span 2 !important; }
+  .vibot-twbs .col-xl-3  { grid-column: span 3 !important; }
+  .vibot-twbs .col-xl-4  { grid-column: span 4 !important; }
+  .vibot-twbs .col-xl-5  { grid-column: span 5 !important; }
+  .vibot-twbs .col-xl-6  { grid-column: span 6 !important; }
+  .vibot-twbs .col-xl-7  { grid-column: span 7 !important; }
+  .vibot-twbs .col-xl-8  { grid-column: span 8 !important; }
+  .vibot-twbs .col-xl-9  { grid-column: span 9 !important; }
+  .vibot-twbs .col-xl-10 { grid-column: span 10 !important; }
+  .vibot-twbs .col-xl-11 { grid-column: span 11 !important; }
+  .vibot-twbs .col-xl-12 { grid-column: span 12 !important; }
 }
-
-
 
 
 
@@ -328,6 +332,15 @@ body {
 .vibot-twbs dl {
   margin-bottom: 0;
 }
+
+.vibot-twbs ol {
+  list-style: decimal;
+}
+
+.vibot-twbs ul {
+  list-style: disc;
+}
+
 
 .vibot-twbs-body,
 form.vibot-twbs {
@@ -1079,6 +1092,11 @@ span.navbar-brand {
   text-transform: none;
 }
 
+.vibot-twbs .vb-upload .file_upload .unsaved-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
 .vibot-twbs .vb-upload .fileinput-button:focus,
 .vibot-twbs .vb-upload .fileinput-button:focus-within {
   color: #fff !important;
@@ -1240,6 +1258,8 @@ span.navbar-brand {
   padding-left: 15px;
   padding-right: 35px;
 }
+
+
 
 
 .vibot-twbs .navbar-footer .container > .row {
