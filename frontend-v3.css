@@ -391,6 +391,7 @@ span.navbar-brand {
   .vibot-twbs .btn-group,
   .vibot-twbs .btn-group-vertical {
     flex-wrap: wrap !important;
+    width: 100%;
   }
 
   .vibot-twbs .btn-group > .btn,
