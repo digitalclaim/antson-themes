@@ -1323,3 +1323,10 @@ span.navbar-brand {
   }
 }
 
+/* fix overflow on small screens of upload entries */
+@media only screen and (max-width: 500px) {
+  .vibot-twbs .file_upload > .upload-files-table .files p.name span {
+    line-break: anywhere;
+  }
+}
+
