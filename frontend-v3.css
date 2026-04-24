@@ -280,7 +280,8 @@ body {
   padding-top: 42px;
 }
 
-
+/* Removed to reanable Antson Templateing when needed */
+/*
 .vibot-twbs-body .navbar {
   padding: 0;
   margin-bottom: 0;
@@ -303,7 +304,6 @@ body {
 .navbar,
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   box-shadow: none !important;
-  /* background-color: #fff !important; */
 }
 
 .navbar.navbar-header .container:after {
@@ -313,6 +313,7 @@ body {
   margin-right: 25px;
   display: none;
 }
+*/
 
 .main-headline {
   margin-top: 1rem !important;
