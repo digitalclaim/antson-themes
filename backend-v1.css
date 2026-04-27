@@ -172,6 +172,11 @@ form.vibot-twbs {
 
 /* ARGUS AI */
 
+.group.ai {
+    margin-left: 15px !important;
+    max-width: calc(100% - 30px) !important;
+}
+
 .group.ai .row {
     background: linear-gradient(to right, #196bf6, #4184f6, #5d92ec);
     box-shadow: 0px 0px 8.0px hsl(0deg 0% 0% / 23%);
