@@ -1331,3 +1331,7 @@ form.vibot-twbs {
   }
 }
 
+.vibot-twbs .vb-element.alert.alert--danger a,
+.vibot-twbs .vb-element.alert.alert--danger a::after {
+  color: var(--color-secondary-faded) !important;
+}
